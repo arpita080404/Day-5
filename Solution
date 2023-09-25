@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int geyserCapacity, bucketCapacity;
+    
+    // Input the capacity of the geyser and bucket
+    printf("Enter the capacity of the geyser (X liters): ");
+    scanf("%d", &geyserCapacity);
+    
+    printf("Enter the capacity of the bucket (Y liters): ");
+    scanf("%d", &bucketCapacity);
+    
+    // Calculate the maximum number of people who can take a bath
+    int people = geyserCapacity / (2 * bucketCapacity);
+    
+    // Display the result
+    printf("Maximum number of people who can take a bath: %d\n", people);
+    
+    return 0;
+}
